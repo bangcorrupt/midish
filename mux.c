@@ -560,11 +560,14 @@ mux_startcb(void)
 	 * if the MIDI START event comes from a device
 	 * move to the beginning (we don't support SPP yet)
 	 */
+	
+	/*
 	if (mididev_clksrc) {
 		mux_curpos = 0;
 		mux_nextpos = mux_ticlength;
 		song_gotocb(usong, 0);
 	}
+	*/
 	mux_chgphase(MUX_START);
 }
 
